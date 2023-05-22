@@ -1,0 +1,129 @@
+<div class="ultimate-container">
+
+  <div class="seedings">
+    <h2>1st</h2>
+
+    <div cdkDropList #firstList="cdkDropList" [cdkDropListData]="first"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne1Predicate">
+      <div class="example-box" *ngFor="let item of first" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>2nd</h2>
+
+    <div cdkDropList #secondList="cdkDropList" [cdkDropListData]="second"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne2Predicate">
+      <div class="example-box" *ngFor="let item of second" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>3rd</h2>
+
+    <div cdkDropList #thirdList="cdkDropList" [cdkDropListData]="third"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne3Predicate">
+      <div class="example-box" *ngFor="let item of third" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>4th</h2>
+
+    <div cdkDropList #fourthList="cdkDropList" [cdkDropListData]="fourth"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne4Predicate">
+      <div class="example-box" *ngFor="let item of fourth" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>5th</h2>
+
+    <div cdkDropList #fifthList="cdkDropList" [cdkDropListData]="fifth"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne5Predicate">
+      <div class="example-box" *ngFor="let item of fifth" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>6th</h2>
+
+    <div cdkDropList #sixthList="cdkDropList" [cdkDropListData]="sixth"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne6Predicate">
+      <div class="example-box" *ngFor="let item of sixth" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>7th</h2>
+
+    <div cdkDropList #seventhList="cdkDropList" [cdkDropListData]="seventh"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne7Predicate">
+      <div class="example-box" *ngFor="let item of seventh" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="seedings">
+    <h2>8th</h2>
+
+    <div cdkDropList #eightList="cdkDropList" [cdkDropListData]="eight"
+      [cdkDropListConnectedTo]="[allList, all2List, all3List, all4List]" class="example-list"
+      (cdkDropListDropped)="drop($event)" [cdkDropListEnterPredicate]="onlyOne8Predicate">
+      <div class="example-box" *ngFor="let item of eight" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="example-container">
+  <h2>All</h2>
+
+  <div cdkDropList #allList="cdkDropList" [cdkDropListData]="all"
+    [cdkDropListConnectedTo]="[firstList, secondList, thirdList, fourthList, fifthList, sixthList, seventhList, eightList]"
+    class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of all" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="example-container2">
+
+  <div cdkDropList #all2List="cdkDropList" [cdkDropListData]="all2"
+    [cdkDropListConnectedTo]="[firstList, secondList, thirdList, fourthList, fifthList, sixthList, seventhList, eightList,]"
+    class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of all2" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="example-container2">
+
+  <div cdkDropList #all3List="cdkDropList" [cdkDropListData]="all3"
+    [cdkDropListConnectedTo]="[firstList, secondList, thirdList, fourthList, fifthList, sixthList, seventhList, eightList,]"
+    class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of all3" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="example-container2">
+
+  <div cdkDropList #all4List="cdkDropList" [cdkDropListData]="all4"
+    [cdkDropListConnectedTo]="[firstList, secondList, thirdList, fourthList, fifthList, sixthList, seventhList, eightList,]"
+    class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of all4" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="submit-button">
+  <button mat-raised-button id="submitButton" (click)="submitChoices()">Submit</button>
+</div>
+
+<div class="textarea-container">
+  <p id="textarea-p"[innerText]="content"></p>
+</div>

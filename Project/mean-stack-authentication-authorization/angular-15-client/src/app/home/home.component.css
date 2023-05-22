@@ -1,0 +1,34 @@
+.countries {
+    vertical-align: middle;
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+.countries > thead > tr > th {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+.countries > tbody > tr > th {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+.countries > tbody > tr > td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+h1 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 30%;
+}
+
+.empty {
+    padding: 5%;
+}
+
+.container {
+    padding-left: 20%;
+}
