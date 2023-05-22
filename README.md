@@ -5,9 +5,7 @@ Database: MongoDB
 Angular: 15
 
 
-Base used:
-
-https://github.com/bezkoder/mean-stack-authentication-authorization
+Base used: https://github.com/bezkoder/mean-stack-authentication-authorization
 
 
 MongoDB is running in mongodb://127.0.0.1:27017/mean
