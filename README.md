@@ -20,3 +20,4 @@ node(mon) server in node-js-server root to run server
 
 ng serve --port 0000 in angular-15-client root to run the frontend
 
+Lauri Tirkkonen
